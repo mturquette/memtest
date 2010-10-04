@@ -9,25 +9,25 @@ LIBS     = -L. -lmisc
 
 all : libmisc.a $(PROGS)
 
-CFLAGS    	= -Wall
-CFLAGS   	+= -W 
-CFLAGS   	+= -Wstrict-prototypes
-CFLAGS   	+= -Wmissing-prototypes  
-CFLAGS   	+= -Wmissing-declarations
-#CFLAGS   	+= -Wredundant-decls
-CFLAGS   	+= -Wnested-externs
-CFLAGS  	+= -Wshadow
-CFLAGS   	+= -Winline
-#CFLAGS   	+= -Waggregate-return 
-#CFLAGS   	+= -Wpointer-arith
-CFLAGS   	+= -Wbad-function-cast
-CFLAGS   	+= -Wno-unused 
-CFLAGS   	+= -Wcast-align
-CFLAGS   	+= -Wcast-qual 
-#CFLAGS   	+= -Wconversion 
-CFLAGS   	+= -ggdb3
-CFLAGS   	+= -O2
-CC        = gcc
+CFLAGS	= -Wall
+CFLAGS	+= -W
+CFLAGS	+= -Wstrict-prototypes
+CFLAGS	+= -Wmissing-prototypes
+CFLAGS	+= -Wmissing-declarations
+#CFLAGS	+= -Wredundant-decls
+CFLAGS	+= -Wnested-externs
+CFLAGS	+= -Wshadow
+CFLAGS	+= -Winline
+#CFLAGS	+= -Waggregate-return
+#CFLAGS	+= -Wpointer-arith
+CFLAGS	+= -Wbad-function-cast
+CFLAGS	+= -Wno-unused
+CFLAGS	+= -Wcast-align
+CFLAGS	+= -Wcast-qual
+#CFLAGS	+= -Wconversion
+CFLAGS	+= -ggdb3
+CFLAGS	+= -O2
+CC	?= gcc
 
 CC_OPTS = $(CFLAGS) $($*_CC_OPTS)
 CXX_OPTS = $(CFLAGS) -frepo $($*_CC_OPTS)
