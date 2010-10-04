@@ -1,0 +1,13 @@
+
+Todo
+----
+
+- Find more programs (you can submit yours)
+- Put more utilities functions in misc_lib.c
+- Put one skeleton for test and a easy way to call/kill several tests
+  in parallel (see mtest.c)
+- Put several syncronization primitives for parents/childs (see
+  mtest.c)
+- Put your ideas/thoughts/code here
+
+

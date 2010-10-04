@@ -1,0 +1,37 @@
+
+Memory Test Suite
+-----------------
+
+This is one (small) test suite of programs that have triggered/trigger
+problems in the virtual memory system.  The idea is having a set of
+programs easy to setup and run to test the memory system.
+
+To discuss something about the suite, fill free to contact me
+(quintela@fi.udc.es) or the Linux memory team, that is where I have
+find this programs (linux-mm@kvack.org).  I have also found ideas and
+inspiration for doing that in the IRC: #kernelnewbies chat, in the
+server irc.openprojects.net, chatting with several people, between them
+Rick van Riel <riel@conectiva.com.br>, who told me to put together my
+programs that crashed the kernel in one suite.
+
+I have edited lightly the programs to use comun functions defined in
+misc_lib.h.
+
+You can run the tests mmap001, mmap002 and misc001 with one parameter
+indicating the size of your RAM in megabites.
+
+If you want to tune the tests for your machine, edit the file
+mis_lib.h, the defines in it, things like RAMSIZE. The tests are
+configured to use your RAM and part of swap, and for that their use
+that number.  Feel free to change that values and test them in any way
+that you can thought of.  If you find some combination of tests than
+trigger easily a bug, let me know and I will add that information to
+the test suite.
+
+Thanks for your attention.
+
+Enjoy yourself.
+
+
+This software is released under the GNU General Public License (GPL).
+

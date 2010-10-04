@@ -1,0 +1,37 @@
+
+This file describes several commands than generate a great load in your system.
+
+Kernel compiles:
+        make -j bzImage
+
+        It will generate a *big* load
+
+
+Bonnie test:
+        make -s <big file>
+        This is a file system benchmark
+
+/proc test:
+        this test is from: Alexander Demenshin <aldem-linux@aldem.net>
+
+  $ top -d0     # Yes, with _no_ delay.
+  
+  Sure it will Oops even with -d1, but with -d0 it will do so quickly :)
+  
+  On the another console:
+  
+  $ find / -xdev -type f | xargs -n1 -P100 md5sum --
+  
+  After short time (it depends) it will crash. BTW, after Oops it is nearly
+  impossible to shut system down, however it will function for some time.
+  One or several processes that are running will be impossible to kill,
+  and attempt just to 'cd /proc/<pid>' on some of processes will block the
+  process doing 'cd' (which also becomes unkillable).
+
+A memory tester: memtester.sh
+  I have get that from the  Doug Ledford web page
+  <http://people.redhat.com/dledford/>.
+
+
+
+         
