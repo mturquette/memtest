@@ -3,7 +3,7 @@ MAKEFLAGS = --no-builtin-rules
 # We don't use any suffix rules
 .SUFFIXES :
 
-PROGS    = mmap001 mmap002 misc001 mtest fillmem ipc001 shm-stress
+PROGS    = mmap001 mmap002 misc001 mtest fillmem ipc001
 LIB_OBJS = misc_lib.o
 LIBS     = -L. -lmisc
 
